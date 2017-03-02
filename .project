@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>seleniumtest</name>
-	<comment>Project seleniumtest created by Buildship.</comment>
+	<name>TestSelenium</name>
+	<comment>Project TestSelenium created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>

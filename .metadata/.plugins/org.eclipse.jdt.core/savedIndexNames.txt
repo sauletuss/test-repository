@@ -1,0 +1,1 @@
+INDEX VERSION 1.129+C:\Users\Nazira\Documents\GitHub\test-repository\.metadata\.plugins\org.eclipse.jdt.core
