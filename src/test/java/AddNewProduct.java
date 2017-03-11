@@ -48,7 +48,8 @@ public class AddNewProduct {
 		Thread.sleep(2000);
 		//Вкладка General
 		driver.findElement(By.name("status")).click();
-		driver.findElement(By.name("name[en]")).sendKeys("Shower gel");
+		String nameOfProduct = "Shower gel";  
+		driver.findElement(By.name("name[en]")).sendKeys(nameOfProduct);
 		driver.findElement(By.name("code")).sendKeys("sh001");
 		driver.findElement(By.name("quantity")).sendKeys(Keys.HOME + "1");		
 		File image = new File("ShowerGel.jpg");
@@ -71,7 +72,7 @@ public class AddNewProduct {
 		driver.findElement(By.name("save")).click();
 		Thread.sleep(2000);
 		//Убедиться, что новый продукт появился в каталоге
-		assertTrue(wasNewProductAdded(By.cssSelector("tr.row"), "Shower gel"));
+		assertTrue(wasNewProductAdded(By.cssSelector("tr.row"), nameOfProduct));
 		
 	}
 
