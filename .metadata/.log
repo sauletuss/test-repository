@@ -157,3 +157,81 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-03-11 09:31:35.042 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-11 09:32:10.730
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nazira'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-03-11 09:33:50.841 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-11 09:34:01.334
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nazira'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.buildship.core 2 0 2017-03-11 09:35:15.251
+!MESSAGE Cannot load project configuration for project testselenium.
+!STACK 0
+org.eclipse.buildship.core.GradlePluginsRuntimeException: Cannot read preference from file C:\Users\Nazira\Documents\GitHub\test-repository\testselenium\.settings\org.eclipse.buildship.core.prefs
+	at org.eclipse.buildship.core.configuration.internal.PreferenceStore$PropertiesFilePreferenceStore.loadProperties(PreferenceStore.java:155)
+	at org.eclipse.buildship.core.configuration.internal.PreferenceStore$PropertiesFilePreferenceStore.getProperties(PreferenceStore.java:143)
+	at org.eclipse.buildship.core.configuration.internal.PreferenceStore$PropertiesFilePreferenceStore.read(PreferenceStore.java:169)
+	at org.eclipse.buildship.core.configuration.internal.DefaultProjectConfigurationPersistence.readProjectConfiguration(DefaultProjectConfigurationPersistence.java:56)
+	at org.eclipse.buildship.core.configuration.internal.DefaultProjectConfigurationPersistence.loadFromPropertiesFile(DefaultProjectConfigurationPersistence.java:67)
+	at org.eclipse.buildship.core.configuration.internal.DefaultProjectConfigurationPersistence.readProjectConfiguration(DefaultProjectConfigurationPersistence.java:43)
+	at org.eclipse.buildship.core.configuration.internal.DefaultProjectConfigurationManager.tryReadProjectConfiguration(DefaultProjectConfigurationManager.java:112)
+	at org.eclipse.buildship.core.configuration.internal.DefaultProjectConfigurationManager.tryReadProjectConfiguration(DefaultProjectConfigurationManager.java:106)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$3.apply(SynchronizeGradleBuildOperation.java:164)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$3.apply(SynchronizeGradleBuildOperation.java:160)
+	at com.google.common.collect.Iterators$7.computeNext(Iterators.java:647)
+	at com.google.common.collect.AbstractIterator.tryToComputeNext(AbstractIterator.java:143)
+	at com.google.common.collect.AbstractIterator.hasNext(AbstractIterator.java:138)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226)
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:334)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.getOpenWorkspaceProjectsRemovedFromGradleBuild(SynchronizeGradleBuildOperation.java:169)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeProjectsWithWorkspace(SynchronizeGradleBuildOperation.java:127)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.run(SynchronizeGradleBuildOperation.java:122)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:77)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:68)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:62)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\Nazira\Documents\GitHub\test-repository\testselenium\.settings\org.eclipse.buildship.core.prefs (Системе не удается найти указанный путь)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.buildship.core.configuration.internal.PreferenceStore$PropertiesFilePreferenceStore.loadProperties(PreferenceStore.java:151)
+	... 24 more
+!SESSION 2017-03-11 09:36:22.015 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-11 09:36:42.056
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nazira'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
