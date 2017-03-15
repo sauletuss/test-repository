@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+C:\Users\Nazira\Documents\GitHub\test-repository\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1132958491.index
+674953544.index
+3154563991.index
+426283268.index
+2501589572.index
+725555719.index

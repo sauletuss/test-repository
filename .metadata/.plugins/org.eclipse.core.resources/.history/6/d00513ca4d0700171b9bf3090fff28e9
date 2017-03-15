@@ -1,0 +1,42 @@
+import static org.junit.Assert.*;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class ShoppingBasket {
+	private WebDriver driver;
+	WebDriverWait wait = new WebDriverWait(driver, 10/*seconds*/);
+
+
+	@Before
+	public void start() {
+		driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	}
+	
+	@Test
+	public void test() {
+		driver.get("http://litecart.stqa.ru/");
+		WebElement numOfItems = driver.findElement(By.cssSelector("a.content"));
+		System.out.println(numOfItems.getAttribute("textContent"));
+		driver.findElement(By.cssSelector("li.product.column.shadow.hover-light")).click();
+		driver.findElement(By.name("add_cart_product")).click();
+		wait.until(ExpectedConditions.stalenessOf(numOfItems));
+
+	}
+	
+	@After
+	public void stop() {
+		driver.quit();
+	}
+
+}
